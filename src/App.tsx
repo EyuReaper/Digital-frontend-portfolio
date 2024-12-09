@@ -1,15 +1,18 @@
-import React from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Hero from './components/Hero';
-import Gallery from './components/Gallery';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 
-const App: React.FC = () => {
+const App = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
+    <div className = "container ">
+      <Header />
+      <main className="w-full max-w-4xl px-4">
       <Hero />
-      <Gallery />
+      <div className='projects' >
+      <Projects />
+      </div>
+      </main>
       <Footer />
     </div>
   );
