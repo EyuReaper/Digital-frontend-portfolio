@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from '../assets/images/117A12523.jpg';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,7 +15,18 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center px-8 py-4">
+      
+      <div className="avatar">
+  <div className="w-8 rounded">
+    <img
+      src={logo}
+      alt="avatar" />
+  </div>
+</div>
+
       <h1 className="text-lg font-bold">Eyuel G.</h1>
+
+      
       <nav>
         <ul className="flex gap-4 text-primary">
           <li>
